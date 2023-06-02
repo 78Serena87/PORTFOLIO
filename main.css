@@ -2,12 +2,10 @@
 
 
 :root{
-	/* --main-background: #0B0149; */
 	--main-fonts-color: #508656;
 	--main-decor-color:#6EC795;
   --main-header-background:#FCF8EA;
 	--main-font-family: 'Fraunces', serif;
- /* --background-image: url('./uploads/indieground-vintagepaper-textures-02.jpg');*/
 }
 
 *{
@@ -16,7 +14,6 @@
 	scroll-behavior: smooth;
   font-family: var(--main-font-family);
   box-sizing: border-box;
- /*  background-image: url('./uploads/indieground-vintagepaper-textures-02.jpg'); */
 }
 
 main{
@@ -44,12 +41,11 @@ header{
 	z-index: 5;
 }
 .nav-show{
-	opacity: 0;
+	opacity: 100;
 }
 
 header:hover{
 	opacity: 1;
-	background: var(--main-header-background);
 }
 
 .logo img{
@@ -72,7 +68,6 @@ a.nav-link{
 	color: var(--main-fonts-color);
 	font-family: var(--main-font-family);
 	cursor: blink;
-    /* pointer; */
 	text-transform: uppercase;
 }
 
@@ -89,14 +84,6 @@ a.nav-link{
 /*──────────────────
        home
 ──────────────────*/
-
-/* Changing size of Portfolio word below 
-
-.port-image {
-  width: 300px;
-  height: 100px;
-} */
-
 
 #home{ 	
 	margin: auto;
@@ -137,7 +124,7 @@ a.nav-link{
 }
 
  h3{
-  margin-top: 50px;
+  margin-top: 90px;
 	padding-bottom: 15px;
   letter-spacing: normal;
   font-family: var(--main-font-family);
@@ -159,40 +146,11 @@ a.nav-link{
 }
 
 /*──────────────────
-    social media
-──────────────────*/
-
-.social-media{
-	padding: 10px;
-	display: flex;
-	position: center;
-    align-items: space-around;
-	justify-content:center;
-}
-
-.social-media a {
-    margin: 10px;
-    font-size: 2rem;
-    text-align:center;
-    display: inline-block;
-	color: var(--main-fonts-color);
-}
-
-.social-media a i{
-	cursor: pointer;
-}
-
-.social-media  a:hover {
-	color: var(--main-decor-color);
-	text-shadow: 0 0 50px var(--main-decor-color);
-}
-
-/*──────────────────
       projects
 ──────────────────*/
 
 #projects{
-	margin-top:100px;
+	margin-top:40px;
     height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -223,15 +181,15 @@ a.nav-link{
 	display: flex;
 	flex-direction: column;
 	margin: 20px;
-	width: 200px;
-	height:250px;
+	width: 300px;
+	height:450px;
 	border-radius:12px;
     background:var(--main-decor-color);
 }
 
 .card img{
 	width: 100%;
-	height:70%;
+	height:90%;
 	border-radius:10px 10px 0px 0px;
 }
 
@@ -263,7 +221,7 @@ a.nav-link{
 #contact{
 	margin: auto;
 	padding-bottom: 20px;
-	height: 600px;
+	height: 200px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -285,18 +243,18 @@ a.nav-link{
 footer {
 	width: 100%;
 	height: 100%;
-    background-color: var(--main-header-background);
+    background-color: url('./uploads/indieground-vintagepaper-textures-02.jpg');
 }
 
 .copyright {
-	color: #fff;
+	color: #9e7261;
 	font-size: 1.2rem;
 	line-height: 40px;
 	text-align: center;
 }
 
 .copyright a{
-	color: #fff;
+	color: #9e7261;
 	font-size: 1rem;
 	letter-spacing: 1px;
     text-decoration: none;
@@ -450,17 +408,6 @@ hr {
   animation: glow 1s ease-in-out infinite alternate;
 }
 
-/*
-@-webkit-keyframes glow {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-  }
-  
-  to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-  }
-}
-*/
 body {
   background-image: url('./assets/indieground-vintagepaper-textures-02.jpg');
 }
