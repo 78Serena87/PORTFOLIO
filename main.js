@@ -53,7 +53,7 @@ function draw() {
   //make the ellipse follow your mouse
 
   if (mouseIsPressed) {
-    fill(random(255), random(255), random(255), 100)
+    fill(random(0, 255, 0), random(0, 255, 0), random(0, 255, 0), 100)
     ellipse(mouseX, mouseY, 30, 30)
   } else {
     clear()
