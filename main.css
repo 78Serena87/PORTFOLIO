@@ -462,5 +462,9 @@ hr {
 }
 */
 body {
-  background-image: url('indieground-vintagepaper-textures-02.jpg');
+  background-image: url('./assets/indieground-vintagepaper-textures-02.jpg');
+}
+
+#parentDiv{
+  position:absolute
 }

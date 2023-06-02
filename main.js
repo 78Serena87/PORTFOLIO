@@ -36,17 +36,34 @@ window.onload = () => navSlide()
 //Mouse circles//
 
 function setup() {
-  createCanvas(windowHeight, windowWidth)
+  let h = Math.max(
+    document.body.scrollHeight,
+    document.documentElement.scrollHeight,
+    document.body.offsetHeight,
+    document.documentElement.offsetHeight,
+    document.body.clientHeight,
+    document.documentElement.clientHeight
+  )
+  let cnv = createCanvas(windowWidth, h)
+  cnv.parent('parentDiv')
+  // createCanvas(windowWidth, windowHeight)
 }
 
 function draw() {
   //make the ellipse follow your mouse
 
-  // fill(33,156,86, 200)
-  stroke(22, 102, 56)
-  strokeWeight(1)
-  fill(33, 156, 86, 50)
-  ellipse(mouseX, mouseY, 40, 40)
-  fill(110, 199, 149, 100)
-  ellipse(mouseX, mouseY, 30, 30)
+  if (mouseIsPressed) {
+    fill(random(255), random(255), random(255), 100)
+    ellipse(mouseX, mouseY, 30, 30)
+  } else {
+    clear()
+
+    // fill(33,156,86, 200)
+    stroke(22, 102, 56)
+    strokeWeight(1)
+    fill(33, 156, 86, 50)
+    ellipse(mouseX, mouseY, 40, 40)
+    fill(110, 199, 149, 100)
+    ellipse(mouseX, mouseY, 30, 30)
+  }
 }
